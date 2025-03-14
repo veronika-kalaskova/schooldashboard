@@ -18,6 +18,8 @@ model Admin {
   username String @unique
 }
 
+// TODO: pokud udelam zmenu v db, tak dam npx prisma db push --force-reset; npx prisma db seed
+
 model Student {
   id          String       @id
   username    String       @unique
