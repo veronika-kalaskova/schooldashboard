@@ -117,6 +117,14 @@ const TeacherListPage = async ({
               },
             };
           }
+          // TODO: nechapu proc tam je break
+          break;
+          case "search": {
+            query.name = {
+              contains: value,
+              mode: "insensitive",
+            }
+          }
         }
       }
     }
